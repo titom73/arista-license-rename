@@ -30,6 +30,22 @@ Start reading folder data for license file
 - License file: license_MACsec_2.json renamed to  CUSTOMER01-JPxxxxxxxx-lic.json
 ```
 
+## Docker
+
+> Image is not available in docker hub, please build your own image.
+
+Build image:
+
+```
+docker build -t titom73/arista-license-rename:edge .
+```
+
+Execute container:
+
+```
+docker run --rm titom73/arista-license-rename:edge rename -i data --backup
+```
+
 ## License
 
 Code is under Apache2 License
